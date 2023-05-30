@@ -628,167 +628,171 @@ class _AvailableShiftState extends State<AvailableShift> {
                                   showDialog(
                                       context: context,
                                       builder: (context) {
-                                        return Container(
-                                          child: AlertDialog(
-                                            actions: [
-                                              Column(
-                                                children: [
-                                                  Row(
-                                                    children: [
-                                                      Text(
-                                                        "Select Driver",
-                                                        style: TextStyle(
-                                                            fontSize: 16,
-                                                            fontWeight:
-                                                                FontWeight
-                                                                    .w600),
-                                                      ),
-                                                      const Spacer(),
-                                                      IconButton(
-                                                        onPressed: () {
-                                                          Navigator.pop(
-                                                              context);
-                                                        },
-                                                        icon: Icon(
-                                                          Icons.close,
-                                                          size: 16,
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                  Row(
-                                                    children: [
-                                                      Text(
-                                                        'Aminul Islam',
-                                                        style: TextStyle(
-                                                            fontSize: 14,
-                                                            fontWeight:
-                                                                FontWeight
-                                                                    .w400),
-                                                      ),
-                                                      const Spacer(),
-                                                      Radio(
-                                                        value: 1,
-                                                        groupValue: groupValue2,
-                                                        activeColor:
-                                                            Colors.green,
-                                                        onChanged: (value) {
-                                                          print(value);
-                                                          setState(() {
-                                                            groupValue2 =
-                                                                value!;
-                                                          });
-                                                        },
-                                                      ),
-                                                    ],
-                                                  ),
-                                                  Row(
-                                                    children: [
-                                                      Text(
-                                                        'Aminul Islam',
-                                                        style: TextStyle(
-                                                            fontSize: 14,
-                                                            fontWeight:
-                                                                FontWeight
-                                                                    .w400),
-                                                      ),
-                                                      const Spacer(),
-                                                      Radio(
-                                                        value: 2,
-                                                        groupValue: groupValue2,
-                                                        activeColor:
-                                                            Colors.green,
-                                                        onChanged: (value) {
-                                                          print(value);
-                                                          setState(() {
-                                                            groupValue2 =
-                                                                value!;
-                                                          });
-                                                        },
-                                                      ),
-                                                    ],
-                                                  ),
-                                                  Row(
-                                                    children: [
-                                                      Text(
-                                                        'Aminul Islam',
-                                                        style: TextStyle(
-                                                            fontSize: 14,
-                                                            fontWeight:
-                                                                FontWeight
-                                                                    .w400),
-                                                      ),
-                                                      const Spacer(),
-                                                      Radio(
-                                                        value: 3,
-                                                        groupValue: groupValue2,
-                                                        activeColor:
-                                                            Colors.green,
-                                                        onChanged: (value) {
-                                                          print(value);
-                                                          setState(() {
-                                                            groupValue2 =
-                                                                value!;
-                                                          });
-                                                        },
-                                                      ),
-                                                    ],
-                                                  ),
-                                                  Row(
-                                                    children: [
-                                                      Text(
-                                                        'Aminul Islam',
-                                                        style: TextStyle(
-                                                            fontSize: 14,
-                                                            fontWeight:
-                                                                FontWeight
-                                                                    .w400),
-                                                      ),
-                                                      const Spacer(),
-                                                      Radio(
-                                                        value: 4,
-                                                        groupValue: groupValue2,
-                                                        activeColor:
-                                                            Colors.green,
-                                                        onChanged: (value) {
-                                                          print(value);
-                                                          setState(() {
-                                                            groupValue2 =
-                                                                value!;
-                                                          });
-                                                        },
-                                                      ),
-                                                    ],
-                                                  ),
-                                                  Container(
-                                                    width: 90,
-                                                    height: 30,
-                                                    decoration: BoxDecoration(
-                                                        color:
-                                                            Color(0XFFF89818),
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(5)),
-                                                    child: TextButton(
+                                        return StatefulBuilder(
+                                              builder: (context, setState) {
+                                                  return AlertDialog(
+                                          actions: [
+                                            Column(
+                                              children: [
+                                                Row(
+                                                  children: [
+                                                    Text(
+                                                      "Select Driver",
+                                                      style: TextStyle(
+                                                          fontSize: 16,
+                                                          fontWeight:
+                                                              FontWeight
+                                                                  .w600),
+                                                    ),
+                                                    const Spacer(),
+                                                    IconButton(
                                                       onPressed: () {
-                                                        Navigator.pop(context);
+                                                        Navigator.pop(
+                                                            context);
                                                       },
-                                                      child: Text(
-                                                        'Submit',
-                                                        style: TextStyle(
-                                                            fontSize: 12,
-                                                            fontWeight:
-                                                                FontWeight.w500,
-                                                            color:
-                                                                Colors.white),
+                                                      icon: Icon(
+                                                        Icons.close,
+                                                        size: 16,
                                                       ),
                                                     ),
+                                                  ],
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Text(
+                                                      'Aminul Islam',
+                                                      style: TextStyle(
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight
+                                                                  .w400),
+                                                    ),
+                                                    const Spacer(),
+                                                    Radio(
+                                                      value: 1,
+                                                      groupValue: groupValue2,
+                                                      activeColor:
+                                                          Colors.green,
+                                                      onChanged: (value) {
+                                                        print(value);
+                                                        setState(() {
+                                                          groupValue2 =
+                                                              value!;
+                                                        });
+                                                      },
+                                                    ),
+                                                  ],
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Text(
+                                                      'Aminul Islam',
+                                                      style: TextStyle(
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight
+                                                                  .w400),
+                                                    ),
+                                                    const Spacer(),
+                                                    Radio(
+                                                      value: 2,
+                                                      groupValue: groupValue2,
+                                                      activeColor:
+                                                          Colors.green,
+                                                      onChanged: (value) {
+                                                        print(value);
+                                                        setState(() {
+                                                          groupValue2 =
+                                                              value!;
+                                                        });
+                                                      },
+                                                    ),
+                                                  ],
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Text(
+                                                      'Aminul Islam',
+                                                      style: TextStyle(
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight
+                                                                  .w400),
+                                                    ),
+                                                    const Spacer(),
+                                                    Radio(
+                                                      value: 3,
+                                                      groupValue: groupValue2,
+                                                      activeColor:
+                                                          Colors.green,
+                                                      onChanged: (value) {
+                                                        print(value);
+                                                        setState(() {
+                                                          groupValue2 =
+                                                              value!;
+                                                        });
+                                                      },
+                                                    ),
+                                                  ],
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Text(
+                                                      'Aminul Islam',
+                                                      style: TextStyle(
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight
+                                                                  .w400),
+                                                    ),
+                                                    const Spacer(),
+                                                    Radio(
+                                                      value: 4,
+                                                      groupValue: groupValue2,
+                                                      activeColor:
+                                                          Colors.green,
+                                                      onChanged: (value) {
+                                                        print(value);
+                                                        setState(() {
+                                                          groupValue2 =
+                                                              value!;
+                                                        });
+                                                      },
+                                                    ),
+                                                  ],
+                                                ),
+                                                Container(
+                                                  width: 90,
+                                                  height: 30,
+                                                  decoration: BoxDecoration(
+                                                      color:
+                                                          Color(0XFFF89818),
+                                                      borderRadius:
+                                                          BorderRadius
+                                                              .circular(5)),
+                                                  child: TextButton(
+                                                    onPressed: () {
+                                                      Navigator.pop(context);
+                                                    },
+                                                    child: Text(
+                                                      'Submit',
+                                                      style: TextStyle(
+                                                          fontSize: 12,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                          color:
+                                                              Colors.white),
+                                                    ),
                                                   ),
-                                                ],
-                                              ),
-                                            ],
-                                          ),
+                                                ),
+                                              ],
+                                            ),
+                                          ],
                                         );
+                                     
+                                              },
+                                        );
+                                      
                                       });
                                 },
                                 icon: Icon(
